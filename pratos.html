@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurante</title>
+    <style>
+      * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  background-color: #c02020;
+}
+
+header {
+  background-color: #c02020;
+  text-align: center;
+  color: #fff;
+}
+
+header h1,
+header p {
+  margin: 10px 0;
+  padding: 10px;
+}
+
+header h1 {
+  font-size: 1.8em;
+}
+
+header p {
+  font-size: 1em;
+}
+
+header ul {
+  list-style: none;
+  background-color: #fa9d9d;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+header ul li {
+  margin: 0 15px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1em;
+}
+h2 {
+  font-size: 1em;
+  color: #e69e32;
+  margin: 5px 0;
+}
+header ul li a:hover {
+  color: #fff;
+  border-radius: 5px;
+}
+span {
+  font-size: 1em;
+  color: #000000;
+  font-weight: bold;
+  padding: 2px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(235, 234, 173);
+  height: 80vh;
+}
+
+main h1 {
+  margin: 20px 0;
+  font-size: 1.8em;
+  color: #e69e32;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  height: 20%;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.card img {
+  width: 200px;
+  height: 149px;
+  margin: 4px 0;
+  border-radius: 10px 0 0 10px;
+}
+
+.descricao {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+}
+
+input {
+  width: 70px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #e99210;
+  color: #fff;
+}
+
+footer {
+  background-color: #c02020;
+  text-align: center;
+  padding: 20px 0;
+  color: #fff;
+}
+
+footer p,
+.copyright,
+footer a {
+  font-size: 0.8em;
+  color: #fff;
+  margin: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Restaurante sabor Brasil</h1>
+      <p>O verdadeiro sabor da nossa terra</p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="pratos.html">Pratos</a></li>
+          <li><a href="bebidas.html">Bebidas</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <main>
+        <h1>Pratos Típicos</h1>
+        <div class="card">
+          <div class="produto">
+            <img src="img/feijoada.jpg" alt="" />
+          </div>
+          <div class="descricao">
+            <h2>Feijoada Completa</h2>
+            <p>Feijão preto com carnes variadas, Farofa e Couve refogado</p>
+            <span>Preço: R$ 35,00</span>
+            <input type="submit" value="Comprar" />
+          </div>
+        </div>
+        <div class="card">
+          <div class="produto">
+            <img src="img/moqueca.jpg" alt="" />
+          </div>
+          <div class="descricao">
+            <h2>Moqueca Baiana</h2>
+            <p>Peixe cozido com leite de coco, azeite de dendê e pimentões</p>
+            <span>Preço: R$ 42,00</span>
+            <input type="submit" value="Comprar" />
+          </div>
+        </div>
+        <div class="card">
+          <div class="produto">
+            <img src="img/acaraje.jpg" alt="" />
+          </div>
+          <div class="descricao">
+            <h2>Acarajé</h2>
+            <p>Bolinho de feijão fradinho fritos no dendê com recheio de vatapá e camarão</p>
+            <span>Preço: R$ 25,00</span>
+            <input type="submit" value="Comprar" />
+          </div>
+        </div>
+        <div class="card">
+          <div class="produto">
+            <img src="img/escondidinho.jpg" alt="" />
+          </div>
+          <div class="descricao">
+            <h2>Escondinho de Carne Seca</h2>
+            <p>Purê de mandioca com carne seca desfiada e queijo gratinado</p>
+            <span>Preço: R$ 30,00</span>
+            <input type="submit" value="Comprar" />
+          </div>
+        </div>
+      </main>
+    </section>
+    <footer>
+      <div class="copy">
+        <p>
+          &copy; 2025 Restaurante sabor Brasil. Todos os direitos reservados.
+        </p>
+        <a href="/">Facebook</a>|<a href="/">Instagram</a>|<a href="/"
+          >WhatsApp</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>
