@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurante</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+      header {
+        background-color: #c02020;
+        text-align: center;
+        height: 100%;
+      }
+      header h1 {
+        margin-bottom: 10px;
+        color: #fff;
+        padding:  15px;
+        font-size: 1.5em;
+      }
+      header p {
+        color: #fff;
+        font-size: 1em;
+        margin: 10px;
+        padding: 10px;
+      }
+      header ul {
+        list-style: none;
+        background-color: #fa9d9d;
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+      }
+      header ul li {
+        margin: 0 15px;
+      }
+      header ul li a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 1em;
+        margin: 10px;
+      }
+      footer {
+        background-color: #c02020;
+        text-align: center;
+        padding: 10px 0;
+        color: #fff;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+      }
+      footer p {
+        margin: 5px 0;
+        padding: 10px;
+      }
+      footer a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+      .container {
+            display: flex;
+            margin-top: 10px;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            width: 100%;
+            flex-direction: column;
+            height: 500px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1)
+        }
+
+        .formulario {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 20px;
+            border-color: grey;
+        }
+
+        .criar-conta{
+            background-color: #c02020;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            padding: 5px;
+            border-radius: 5px;
+            border-color: #f5f5f5;    
+        }
+        h2{
+            color: #c02020;
+            margin-bottom: 10px;
+        }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Restaurante sabor Brasil</h1>
+      <p>O verdadeiro sabor da nossa terra</p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="pratos.html">Pratos</a></li>
+          <li><a href="bebidas.html">Bebidas</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <main>
+        <section class="container">
+            <h2>Cadastre-se</h2>
+            <div class="formulario">
+                
+                <form action="">
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" name="nome" id="nome"> <br><br>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email"><br><br>
+
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" name="telefone" id="telefone" placeholder="(99) 99999-9999"><br><br>
+
+                    <label for="datanascimento">Data de Nascimento:</label>
+                    <input type="date" name="datanascimento" id="datanascimento"><br><br>
+
+                    <label for="genero">Gênero:</label><br>
+                    <select name="genero" id="genero">
+                        <option value="">Selecione</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="outro">Outro</option>
+                    </select><br><br>
+
+                    <label for="senha">Senha:</label><br>
+                    <input type="password" name="senha" id="senha" required><br><br>
+
+                    <label for="confirmarsenha">Confirmar Senha:</label><br>
+                    <input type="password" name="senha" id="senha" required><br><br>
+
+                    <label for="checkbox">Termos e condições: </label>
+
+                    <input type="checkbox" name="termos" id="aceito">
+                    <label for="">Aceito</label>
+
+                    <input type="checkbox" name="termos" id="nãoaceito">
+                    <label for="">Não aceito</label><br><br>
+
+                    <button class="criar-conta">Criar Conta</button><br><br><br>
+
+                </form>
+            </div>
+
+
+      </main>
+    </section>
+    <footer>
+      <p>&copy; 2025 Restaurante sabor Brasil. Todos os direitos reservados.</p>
+      <a href="/">Facebook</a>|<a href="/">Instagram</a>|<a href="/"
+        >WhatsApp</a
+      >
+    </footer>
+  </body>
+</html>
