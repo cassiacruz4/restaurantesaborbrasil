@@ -1,0 +1,1 @@
+Este repositório foi criado na disciplina de Html e CSS do curso Geração Tech. O objetivo deste trabalho foi montar uma página de um restaurante com as informações de pratos, bebidas, cadastro de usuário e login.
