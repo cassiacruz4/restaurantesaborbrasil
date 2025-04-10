@@ -7,6 +7,9 @@
     <title>Restaurante</title>
 
     <style>
+        main{
+            height: 500px;
+        }
         section {
             margin: 0px 100px;
             background-color: #fdfdfd;
@@ -29,8 +32,75 @@
                 text-align: center;
                 color: green;
             }
-
-
+                
+                    * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                color: #333;
+            }
+            header {
+                background-color: #c02020;
+                text-align: center;
+                height: 100%;
+            }
+            header h1 {
+                margin-bottom: 10px;
+                color: #fff;
+                padding:  15px;
+                font-size: 1.5em;
+            }
+            header p {
+                color: #fff;
+                font-size: 1em;
+                margin: 10px;
+                padding: 10px;
+            }
+            header ul {
+                list-style: none;
+                background-color: #fa9d9d;
+                display: flex;
+                justify-content: center;
+                padding: 5px;
+            }
+            header ul li {
+                margin: 0 15px;
+            }
+            header ul li a {
+                text-decoration: none;
+                color: #000000;
+                font-size: 1em;
+                margin: 10px;
+            }
+            footer {
+                background-color: #c02020;
+                text-align: center;
+                padding: 10px 0;
+                color: #fff;
+                bottom: 0;
+                width: 100%;
+                height: 100px;
+            }
+            footer p {
+                margin: 5px 0;
+                padding: 10px;
+            }
+            footer a {
+                color: #fff;
+                text-decoration: none;
+                margin: 0 10px;
+            }
+            
+                h2{
+                    margin-bottom: 10px;
+                }
+                img {
+                    border-radius: 20px 0px;
+                }
 
         
     </style>
@@ -39,6 +109,19 @@
 
 
 <body>
+    <header>
+        <h1>Restaurante sabor Brasil</h1>
+        <p>O verdadeiro sabor da nossa terra</p>
+        <nav>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="pratos.html">Pratos</a></li>
+            <li><a href="bebidas.html">Bebidas</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </nav>
+      </header>
     <main>
         <section>
             <div></div>
@@ -53,10 +136,12 @@
                 <input type="senha" name="senha" id="senha" required="required" class="login" placeholderbr> <br>
                 <input type="submit" value="Enviar" id="enviar"> 
     </main>
-
-
-
-
+    <footer>
+        <p>&copy; 2025 Restaurante sabor Brasil. Todos os direitos reservados.</p>
+        <a href="/">Facebook</a>|<a href="/">Instagram</a>|<a href="/"
+          >WhatsApp</a
+        >
+      </footer>
 
 </body>
 
