@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0px;
+            font-family: arial;
+        }
+
+        main {
+            margin: 0px 100px;
+            background-color: #fdfdfd;
+        }
+            h2,
+            p {
+                text-align: center;
+            }
+        
+
+        div {
+            padding: 30px;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .bordas {
+            align-items: end;
+            border-radius: 20px;
+        }
+
+        #sobrenos {
+            background-color: #fff2df;
+
+        }
+
+        #conteudo {
+            background-color: #ffe0b2;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #destaque {
+            background-color: #ffe0b2;
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        #coments {
+            background-color: #fbe9e7;
+        }
+            ul {
+                list-style: none;
+            }
+        
+
+        .comidas {
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            width: 157px;
+            height: 197px;
+            padding: 20px;
+            border-radius: 20px 0px;
+        }
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+      header {
+        background-color: #c02020;
+        text-align: center;
+        height: 100%;
+      }
+      header h1 {
+        margin-bottom: 10px;
+        color: #fff;
+        padding:  15px;
+        font-size: 1.5em;
+      }
+      header p {
+        color: #fff;
+        font-size: 1em;
+        margin: 10px;
+        padding: 10px;
+      }
+      header ul {
+        list-style: none;
+        background-color: #fa9d9d;
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+      }
+      header ul li {
+        margin: 0 15px;
+      }
+      header ul li a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 1em;
+        margin: 10px;
+      }
+      footer {
+        background-color: #c02020;
+        text-align: center;
+        padding: 10px 0;
+        color: #fff;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+      }
+      footer p {
+        margin: 5px 0;
+        padding: 10px;
+      }
+      footer a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+      
+        h2{
+            margin-bottom: 10px;
+        }
+        img {
+            border-radius: 20px 0px;
+        }
+
+    </style>
+    <title>Restaurante</title>
+</head>
+
+<body>
+    <header>
+        <h1>Restaurante sabor Brasil</h1>
+        <p>O verdadeiro sabor da nossa terra</p>
+        <nav>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="pratos.html">Pratos</a></li>
+            <li><a href="bebidas.html">Bebidas</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </nav>
+      </header>
+    <main>
+        <h2>Bem-vindo ao melhor sabor da comida brasileira!</h2>
+        <p>Explore nossos pratos típicos e bebidas deliciosas. Faça seu cadrastro e aproveite ofertas exclusivas.</p>
+        <section>
+            <!-- Parte sobre nós -->
+            <div id="sobrenos" class="bordas">
+
+                <article>
+                    <h3>Sobre Nós</h3>
+                    <div style="display: flex ;width: 982px;">
+                        
+                        <p>O Restaurante Sabor Brasil nasceu da paixão pela culinária brasileira. Valorizamos
+                            ingredientes
+                            frescos e receitas autênticas que representam todas as regiões do Brasil.</p>
+                        <img src="img/comidas-tipicas.png" width="300px" class="bordas" style="padding: 0px 9px;" alt="comidas típicas">
+                    </div>
+
+                </article>
+            </div>
+
+            <div id="conteudo" class="bordas">
+                <h3 style="padding: 0px 20px;">Destaques do Cardápio</h3>
+                <div id="destaque" class="bordas">
+                    <!-- Imagem 1 -->
+                    <article class="comidas">
+                        <img src="img/feijoada completa 500px.jpg" width="100%" alt="Feijoada Completa">
+                        <p>feijoada Completa</p>
+                    </article>
+                    <!-- Imagem 2 -->
+                    <article class="comidas">
+                        <img src="img/Muqueca baiana 500px.png" width="100%" alt="Moqueca Baiana">
+                        <p>Muqueca Baiana</p>
+                    </article>
+                    <!-- Imagem 3 -->
+                    <article class="comidas">
+                        <img src="/img/Escondinho de carne seca 500px.png" width="100%"
+                            alt="Escondidinho de Carne Seca">
+                        <p>Escondidinho de carne seca</p>
+                    </article>
+                </div>
+            </div>
+
+
+            <!-- Comentario dos clientes -->
+            <div id="coments" class="bordas">
+                <article>
+                    <h3>O que dizem nossos clientes</h3>
+                    <ul>
+                        <li> "Comida deliciosa e atendimento impecável. Me senti em casa!" - João P.
+                        <li> "A melhor moqueca que já comi na vida. Parabéns pelo capricho!" - Maria S.
+                        <li> "Ambiente aconchegante e ótimos preços. Voltarei com certeza!" - Rafael T.
+                    </ul>
+                </article>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Restaurante sabor Brasil. Todos os direitos reservados.</p>
+        <a href="/">Facebook</a>|<a href="/">Instagram</a>|<a href="/"
+          >WhatsApp</a
+        >
+      </footer>
+</body>
+
+</html>
